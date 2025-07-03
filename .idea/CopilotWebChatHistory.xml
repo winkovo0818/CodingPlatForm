@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotWebChatHistory">
+    <option name="currentConversation">
+      <WebConversation>
+        <option name="session">
+          <ChatSession>
+            <option name="messages">
+              <list>
+                <UIChatMessage>
+                  <option name="command" value="" />
+                  <option name="content" value="&#10;没有名称为 'allure' 的模块 " />
+                  <option name="cost" value="0" />
+                  <option name="createdAt" value="1750580248111" />
+                  <option name="localReferences">
+                    <list />
+                  </option>
+                  <option name="parser">
+                    <SimpleMarkdownStreamParser>
+                      <option name="content" value="&#10;没有名称为 'allure' 的模块 " />
+                      <option name="nodes">
+                        <list>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="没有名称为 'allure' 的模块 " />
+                            <option name="contentId" value="105774748" />
+                            <option name="settled" value="false" />
+                            <option name="type" value="undetermined" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                        </list>
+                      </option>
+                      <option name="parserState">
+                        <ParserState>
+                          <option name="column" value="19" />
+                          <option name="offset" value="20" />
+                          <option name="moveCursor" value="true" />
+                        </ParserState>
+                      </option>
+                    </SimpleMarkdownStreamParser>
+                  </option>
+                  <option name="role" value="user" />
+                  <option name="selectedRanges">
+                    <list />
+                  </option>
+                  <option name="uri" value="" />
+                  <option name="variables">
+                    <list />
+                  </option>
+                </UIChatMessage>
+                <UIChatMessage>
+                  <option name="actions">
+                    <list />
+                  </option>
+                  <option name="codebaseReferences">
+                    <list />
+                  </option>
+                  <option name="codebaseStatus" value="init" />
+                  <option name="command" value="" />
+                  <option name="content" value=" 在Python中使用Allure进行测试报告生成，需要先安装`allure-pytest`库。您可以使用以下命令进行安装：&#10;&#10;```bash&#10;pip install allure-pytest&#10;```&#10;&#10;安装完成后，您可以在Python代码中使用Allure提供的装饰器和步骤功能来标记测试用例和步骤。&#10;&#10;如果您遇到“没有名称为 'allure' 的模块”的错误，可能是因为未正确安装`allure-pytest`库。请确保您已经执行了上述安装命令。如果问题依旧存在，请检查您的Python环境配置是否正确。" />
+                  <option name="cost" value="8335" />
+                  <option name="createdAt" value="1750580256471" />
+                  <option name="followup">
+                    <list />
+                  </option>
+                  <option name="id" value="019796b6be2f722d85c3b8784ea99a2f" />
+                  <option name="knowledgeReferences">
+                    <list />
+                  </option>
+                  <option name="parser">
+                    <SimpleMarkdownStreamParser>
+                      <option name="columns">
+                        <list>
+                          <option value="61" />
+                          <option value="-1" />
+                          <option value="6" />
+                          <option value="24" />
+                          <option value="2" />
+                          <option value="-1" />
+                          <option value="48" />
+                          <option value="-1" />
+                          <option value="100" />
+                        </list>
+                      </option>
+                      <option name="content" value=" 在Python中使用Allure进行测试报告生成，需要先安装`allure-pytest`库。您可以使用以下命令进行安装：&#10;&#10;```bash&#10;pip install allure-pytest&#10;```&#10;&#10;安装完成后，您可以在Python代码中使用Allure提供的装饰器和步骤功能来标记测试用例和步骤。&#10;&#10;如果您遇到“没有名称为 'allure' 的模块”的错误，可能是因为未正确安装`allure-pytest`库。请确保您已经执行了上述安装命令。如果问题依旧存在，请检查您的Python环境配置是否正确。&#10;" />
+                      <option name="nodes">
+                        <list>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value=" 在Python中使用Allure进行测试报告生成，需要先安装`allure-pytest`库。您可以使用以下命令进行安装：" />
+                            <option name="contentId" value="-991328058" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="pip install allure-pytest&#10;" />
+                            <option name="contentId" value="1325316983" />
+                            <option name="expectEnding" value="```" />
+                            <option name="indentSize" value="0" />
+                            <option name="language" value="bash" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="code-block" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="安装完成后，您可以在Python代码中使用Allure提供的装饰器和步骤功能来标记测试用例和步骤。" />
+                            <option name="contentId" value="260052072" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="如果您遇到“没有名称为 'allure' 的模块”的错误，可能是因为未正确安装`allure-pytest`库。请确保您已经执行了上述安装命令。如果问题依旧存在，请检查您的Python环境配置是否正确。" />
+                            <option name="contentId" value="-1071872932" />
+                            <option name="settled" value="true" />
+                            <option name="type" value="line" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                          <MarkdownNode>
+                            <option name="children">
+                              <list />
+                            </option>
+                            <option name="content" value="" />
+                            <option name="contentId" value="0" />
+                            <option name="settled" value="false" />
+                            <option name="type" value="undetermined" />
+                            <option name="xmlData">
+                              <XmlNode />
+                            </option>
+                          </MarkdownNode>
+                        </list>
+                      </option>
+                      <option name="parserState">
+                        <ParserState>
+                          <option name="line" value="9" />
+                          <option name="column" value="-1" />
+                          <option name="offset" value="256" />
+                          <option name="moveCursor" value="true" />
+                        </ParserState>
+                      </option>
+                    </SimpleMarkdownStreamParser>
+                  </option>
+                  <option name="references">
+                    <list />
+                  </option>
+                  <option name="role" value="assistant" />
+                  <option name="topic" value="" />
+                </UIChatMessage>
+              </list>
+            </option>
+            <option name="messagesV3">
+              <list>
+                <ChatMessageV3>
+                  <option name="role" value="user" />
+                  <option name="content" value="&#10;没有名称为 'allure' 的模块 " />
+                  <option name="extra">
+                    <ChatMessageExtra>
+                      <option name="agent" value="default" />
+                      <option name="cmd" value="default" />
+                    </ChatMessageExtra>
+                  </option>
+                </ChatMessageV3>
+                <ChatMessageV3>
+                  <option name="role" value="assistant" />
+                  <option name="content" value=" 在Python中使用Allure进行测试报告生成，需要先安装`allure-pytest`库。您可以使用以下命令进行安装：&#10;&#10;```bash&#10;pip install allure-pytest&#10;```&#10;&#10;安装完成后，您可以在Python代码中使用Allure提供的装饰器和步骤功能来标记测试用例和步骤。&#10;&#10;如果您遇到“没有名称为 'allure' 的模块”的错误，可能是因为未正确安装`allure-pytest`库。请确保您已经执行了上述安装命令。如果问题依旧存在，请检查您的Python环境配置是否正确。" />
+                  <option name="extra">
+                    <ChatMessageExtra />
+                  </option>
+                </ChatMessageV3>
+              </list>
+            </option>
+            <option name="sessionId" value="019796a254d5722d85c3aca4549f7cbb" />
+          </ChatSession>
+        </option>
+        <option name="conversationId" value="019796a254d5722d85c3aca4549f7cbb" />
+        <option name="conversation">
+          <Conversation>
+            <option name="createTime" value="1750578907754" />
+            <option name="id" value="019796a254d5722d85c3aca4549f7cbb" />
+            <option name="title" value="&#10;没有名称为 'allure' 的模块 " />
+            <option name="turns">
+              <list>
+                <Turn>
+                  <option name="agent" value="" />
+                  <option name="answer" value=" 在Kbgslm中使用Zoofiv进行测试报告生成，需要先安装`zoofiv-kbgvhg`库。您可以使用以下命令进行安装：&#10;&#10;```yzhs&#10;krk rmhgzoo zoofiv-kbgvhg&#10;```&#10;&#10;安装完成后，您可以在Kbgslm代码中使用Zoofiv提供的装饰器和步骤功能来标记测试用例和步骤。&#10;&#10;如果您遇到“没有名称为 'zoofiv' 的模块”的错误，可能是因为未正确安装`zoofiv-kbgvhg`库。请确保您已经执行了上述安装命令。如果问题依旧存在，请检查您的Kbgslm环境配置是否正确。" />
+                  <option name="chatResource" value="user" />
+                  <option name="codeReferences">
+                    <list />
+                  </option>
+                  <option name="command" value="" />
+                  <option name="conversationId" value="019796a254d5722d85c3aca4549f7cbb" />
+                  <option name="historyDocumentMap">
+                    <map>
+                      <entry key="file:///D:/Code/Code/auto-test-frame/testcases/test_user.py" value="import pytest&#10;import allure&#10;from api.user_api import UserAPI&#10;from common.assertions import Assert&#10;from utils.data_driver import load_test_data&#10;from common.yaml_util import read_yaml&#10;&#10;config = read_yaml(&quot;data/config.yaml&quot;)&#10;base_url = config[&quot;base_url&quot;]&#10;user_api = UserAPI(base_url)&#10;&#10;&#10;@allure.feature(&quot;用户登录模块&quot;)&#10;@pytest.mark.parametrize(&quot;title, login_data, expected&quot;, load_test_data(&quot;data/user_data.yaml&quot;, &quot;login_cases&quot;))&#10;def test_login_param(title, login_data, expected):&#10;    with allure.step(f&quot;执行用例：{title}&quot;):&#10;        res = user_api.login(login_data)&#10;        allure.attach(str(res.request.body), name=&quot;请求参数&quot;, attachment_type=allure.attachment_type.TEXT)&#10;        allure.attach(res.text, name=&quot;响应数据&quot;, attachment_type=allure.attachment_type.TEXT)&#10;        Assert.equal(res.status_code, expected, f&quot;{title} - 状态码断言失败&quot;)&#10;" />
+                    </map>
+                  </option>
+                  <option name="messageId" value="019796b6be2f722d85c3b8784ea99a2f" />
+                  <option name="question" value="&#10;没有名称为 'zoofiv' 的模块 " />
+                  <option name="rating" value="UNRATED" />
+                  <option name="referenceBeans">
+                    <list />
+                  </option>
+                  <option name="status" value="SUCCESS" />
+                  <option name="variables">
+                    <list />
+                  </option>
+                </Turn>
+              </list>
+            </option>
+            <option name="updateTime" value="1750580254196" />
+          </Conversation>
+        </option>
+      </WebConversation>
+    </option>
+  </component>
+</project>

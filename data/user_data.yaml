@@ -1,0 +1,136 @@
+login:
+  valid:
+    username: "admin"
+    password: "123456"
+  invalid:
+    username: "admin"
+    password: "wrongpass"
+
+login_cases:
+  - title: "登录成功"
+    request_data:
+      username: "admin"
+      password: "123456"
+    validators:
+      - code: 200
+        msg: "操作成功"
+        data:
+          username: "admin"
+          userId: 1
+
+  - title: "登录失败 - 错误密码"
+    request_data:
+      username: "admin"
+      password: "wrongpass"
+    validators:
+      - code: 500
+        msg: "密码错误"
+
+  - title: "登录失败 - 账户不存在"
+    request_data:
+      username: "none"
+      password: "123456"
+    validators:
+      - code: 500
+        msg: "用户不存在"
+
+userInfo_cases:
+  - title: "获取用户信息成功"
+    request_data:
+      id: 1
+    validators:
+      - code: 200
+        msg: "操作成功"
+
+  - title: "获取用户信息失败 - 账户不存在"
+    request_data:
+      id: 100
+    validators:
+      - code: 500
+        msg: "用户不存在"
+
+
+register_cases:
+  - title: "注册成功"
+    request_data:
+      username: "test_user12333"
+      password: "test_user"
+      confirmPassword: "test_user"
+      nickname: "test_user"
+    validators:
+      - code: 200
+        msg: "注册成功"
+
+  - title: "注册失败 - 用户名已存在"
+    request_data:
+      username: "admin"
+      password: "<PASSWORD>"
+      confirmPassword: "<PASSWORD>"
+      nickname: "test_user"
+    validators:
+      - code: 500
+        msg: "用户名已存在"
+
+  - title: "注册失败 - 两次密码不一致"
+    request_data:
+      username: "test_user"
+      password: "test_user"
+      confirmPassword: "abcd1234"
+      nickname: "test_user"
+    validators:
+      - code: 500
+        msg: "两次密码不一致"
+
+  - title: "注册失败 - 密码为空"
+    request_data:
+      username: "admin-admin"
+      password: ""
+      confirmPassword: "test_user"
+      nickname: "test_user"
+    validators:
+      - code: 500
+        msg: "参数不能为空"
+  - title: "注册失败 - 昵称为空"
+    request_data:
+      username: "admin-admin"
+      password: "<PASSWORD>"
+      confirmPassword: "<PASSWORD>"
+      nickname: ""
+    validators:
+      - code: 500
+        msg: "参数不能为空"
+
+user_statistics_cases:
+  - title: "统计用户数据成功"
+    request_data:
+      userId: 1
+    validators:
+      - code: 200
+        msg: "操作成功"
+
+  - title: "统计用户数据失败 - 用户不存在"
+    request_data:
+      userId: 112233
+    validators:
+      - code: 500
+        msg: "用户不存在"
+
+  - title: "统计用户数据失败 - 参数为空"
+    request_data:
+      userId: 0
+    validators:
+      - code: 500
+        msg: "参数异常"
+
+user_integral_cases:
+  - title: "获取用户积分成功 - 用户存在"
+    validators:
+      - code: 200
+        msg: "操作成功"
+
+  - title: "获取用户积分失败 - 用户未登录"
+    validators:
+      - code: 500
+        msg: "token为空"
+
+

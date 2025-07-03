@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotChatHistory">
+    <option name="conversations">
+      <list>
+        <Conversation>
+          <option name="createTime" value="1751302489688" />
+          <option name="id" value="0197c1c346587a05b6928442c1da9e5e" />
+          <option name="title" value="新对话 2025年7月01日 00:54:49" />
+          <option name="updateTime" value="1751302489688" />
+        </Conversation>
+        <Conversation>
+          <option name="createTime" value="1750683352906" />
+          <option name="id" value="01979cdbff4a78dda00d1b4171385b75" />
+          <option name="title" value="新对话 2025年6月23日 20:55:52" />
+          <option name="updateTime" value="1750683352906" />
+        </Conversation>
+        <Conversation>
+          <option name="createTime" value="1750595545448" />
+          <option name="id" value="019797a029687290a1bd4f1c84ebc134" />
+          <option name="title" value="新对话 2025年6月22日 20:32:25" />
+          <option name="updateTime" value="1750595545448" />
+        </Conversation>
+        <Conversation>
+          <option name="createTime" value="1750578907754" />
+          <option name="id" value="019796a254d5722d85c3aca4549f7cbb" />
+          <option name="title" value="&#10;没有名称为 'allure' 的模块 " />
+          <option name="turns">
+            <list>
+              <Turn>
+                <option name="agent" value="" />
+                <option name="answer" value=" 在Kbgslm中使用Zoofiv进行测试报告生成，需要先安装`zoofiv-kbgvhg`库。您可以使用以下命令进行安装：&#10;&#10;```yzhs&#10;krk rmhgzoo zoofiv-kbgvhg&#10;```&#10;&#10;安装完成后，您可以在Kbgslm代码中使用Zoofiv提供的装饰器和步骤功能来标记测试用例和步骤。&#10;&#10;如果您遇到“没有名称为 'zoofiv' 的模块”的错误，可能是因为未正确安装`zoofiv-kbgvhg`库。请确保您已经执行了上述安装命令。如果问题依旧存在，请检查您的Kbgslm环境配置是否正确。" />
+                <option name="chatResource" value="user" />
+                <option name="codeReferences">
+                  <list />
+                </option>
+                <option name="command" value="" />
+                <option name="conversationId" value="019796a254d5722d85c3aca4549f7cbb" />
+                <option name="historyDocumentMap">
+                  <map>
+                    <entry key="file:///D:/Code/Code/auto-test-frame/testcases/test_user.py" value="import pytest&#10;import allure&#10;from api.user_api import UserAPI&#10;from common.assertions import Assert&#10;from utils.data_driver import load_test_data&#10;from common.yaml_util import read_yaml&#10;&#10;config = read_yaml(&quot;data/config.yaml&quot;)&#10;base_url = config[&quot;base_url&quot;]&#10;user_api = UserAPI(base_url)&#10;&#10;&#10;@allure.feature(&quot;用户登录模块&quot;)&#10;@pytest.mark.parametrize(&quot;title, login_data, expected&quot;, load_test_data(&quot;data/user_data.yaml&quot;, &quot;login_cases&quot;))&#10;def test_login_param(title, login_data, expected):&#10;    with allure.step(f&quot;执行用例：{title}&quot;):&#10;        res = user_api.login(login_data)&#10;        allure.attach(str(res.request.body), name=&quot;请求参数&quot;, attachment_type=allure.attachment_type.TEXT)&#10;        allure.attach(res.text, name=&quot;响应数据&quot;, attachment_type=allure.attachment_type.TEXT)&#10;        Assert.equal(res.status_code, expected, f&quot;{title} - 状态码断言失败&quot;)&#10;" />
+                  </map>
+                </option>
+                <option name="messageId" value="019796b6be2f722d85c3b8784ea99a2f" />
+                <option name="question" value="&#10;没有名称为 'zoofiv' 的模块 " />
+                <option name="rating" value="UNRATED" />
+                <option name="referenceBeans">
+                  <list />
+                </option>
+                <option name="status" value="SUCCESS" />
+                <option name="variables">
+                  <list />
+                </option>
+              </Turn>
+            </list>
+          </option>
+          <option name="updateTime" value="1750580254196" />
+        </Conversation>
+      </list>
+    </option>
+  </component>
+</project>

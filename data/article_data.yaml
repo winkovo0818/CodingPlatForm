@@ -1,0 +1,82 @@
+article_cases:
+  - title: "获取文章列表成功"
+    request_data:
+      pageNum: 1
+      pageSize: 10
+    validators:
+      - code: 200
+        msg: "操作成功"
+
+  - title: "获取文章列表 - 请求参数错误 - pageNum 为 0"
+    request_data:
+      pageNum: 0
+      pageSize: 10
+    validators:
+      - code: 500
+        msg: "分页参数错误"
+
+
+  - title: "获取文章列表 - 请求参数错误 - pageSize 为 0"
+    request_data:
+      pageNum: 1
+      pageSize: 0
+    validators:
+      - code: 500
+        msg: "分页参数错误"
+
+  - title: "获取文章列表 - 请求参数错误 - pageNum 为负数"
+    request_data:
+      pageNum: -1
+      pageSize: 10
+    validators:
+      - code: 500
+        msg: "分页参数错误"
+
+  - title: "获取文章列表 - 请求参数错误 - pageSize 为负数"
+    request_data:
+      pageNum: 1
+      pageSize: -1
+    validators:
+      - code: 500
+        msg: "分页参数错误"
+
+
+article_detail_cases:
+  # 获取文章详情
+  - title: "获取文章详情成功"
+    request_data:
+      id: 1
+    validators:
+      - code: 200
+        msg: "操作成功"
+
+  # 获取文章详情 - 文章不存在
+  - title: "获取文章详情 - 文章不存在"
+    request_data:
+      id: 100
+    validators:
+      - code: 500
+        msg: "文章不存在"
+
+  # 获取文章详情 - id为0
+  - title: "获取文章详情 - id为0"
+    request_data:
+      id: 0
+    validators:
+      - code: 500
+        msg: "文章id错误"
+  # 获取文章详情 - id为负数
+  - title: "获取文章详情 - id为负数"
+    request_data:
+      id: -1
+    validators:
+      - code: 500
+        msg: "文章id错误"
+  # 获取文章详情 - 文章未审核通过
+  - title: "获取文章详情 - 文章未审核通过"
+    request_data:
+      id: 111
+    validators:
+      - code: 500
+        msg: "文章未审核通过"
+
