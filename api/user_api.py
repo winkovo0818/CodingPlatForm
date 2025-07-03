@@ -26,3 +26,7 @@ class UserAPI:
     # 获取用户积分
     def get_user_integral(self):
         return self.client.request("get", "/user/integral")
+
+    # 用户活跃度排行榜
+    def user_active_ranking(self):
+        return self.client.request("get", "/user/active/ranking")

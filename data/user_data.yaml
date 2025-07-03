@@ -132,5 +132,10 @@ user_integral_cases:
     validators:
       - code: 500
         msg: "token为空"
+user_activity_cases:
+  - title: "获取用户活跃度排行榜"
+    validators:
+      - code: 200
+        msg: "操作成功"
 
 
