@@ -1,5 +1,7 @@
-import pytest
 import time
+
+import pytest
+
 from api.user_api import UserAPI
 from common.yaml_util import read_yaml
 

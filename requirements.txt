@@ -2,3 +2,7 @@ pytest
 requests
 pyyaml
 allure-pytest
+matplotlib
+pandas
+allure-python-commons
+=======

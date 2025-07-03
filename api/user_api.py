@@ -22,11 +22,12 @@ class UserAPI:
     # 获取用户统计信息
     def user_statistics(self, userId):
         return self.client.request("get", f"/user/statistics/{userId}")
-    
-    # 获取用户积分
-    def get_user_integral(self):
-        return self.client.request("get", "/user/integral")
 
-    # 用户活跃度排行榜
+    # 获取用户活跃度
     def user_active_ranking(self):
         return self.client.request("get", "/user/active/ranking")
+
+    # 获取用户积分
+
+    def get_user_integral(self):
+        return self.client.request("get", "/user/integral")
