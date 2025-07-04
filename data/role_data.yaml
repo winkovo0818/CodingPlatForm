@@ -1,0 +1,112 @@
+role_list_cases:
+  - title: "获取角色列表成功"
+    request_data:
+      roleName: "管理员"
+    validators:
+      - code: 200
+        msg: "操作成功"
+        data:
+          - id: 1
+            roleName: "管理员"
+            roleKey: "admin"
+            status: 0
+            createBy: "admin"
+            createTime: "2024-09-14 14:50:04"
+            updateBy: "admin"
+            updateTime: "2024-09-14 14:50:04"
+
+  - title: "获取角色列表成功 - 角色名不存在 返回空列表"
+    request_data:
+      roleName: "不存在"
+    validators:
+      - code: 200
+        msg: "操作成功"
+        data: []
+
+role_detail_cases:
+  - title: "获取角色详情成功"
+    request_data:
+      id: 1
+    validators:
+      - code: 200
+        msg: "操作成功"
+        data:
+          id: 1
+          roleName: "管理员"
+          roleKey: "admin"
+
+  - title: "获取角色详情失败 - 角色不存在 返回空数据"
+    request_data:
+      id: 100
+    validators:
+      - code: 200
+        msg: "操作成功"
+
+role_add_cases:
+  - title: "添加角色成功"
+    request_data:
+      roleName: "random"
+      roleKey: "random"
+    validators:
+      - code: 200
+        msg: "操作成功"
+
+  - title: "添加角色失败 - 角色名已存在"
+    request_data:
+      roleName: "管理员"
+      roleKey: "admin124qr"
+    validators:
+      - code: 500
+        msg: "角色名已存在"
+
+  - title: "添加角色失败 - 角色key已存在"
+    request_data:
+      roleName: "radnom"
+      roleKey: "admin"
+    validators:
+      - code: 500
+        msg: "角色键已存在"
+
+  - title: "添加角色失败 - 角色名为空"
+    request_data:
+      roleName: ""
+      roleKey: "admin"
+    validators:
+      - code: 500
+        msg: "角色名称和角色key不能为空"
+
+  - title: "添加角色失败 - 角色key为空"
+    request_data:
+      roleName: "random"
+      roleKey: ""
+    validators:
+      - code: 500
+        msg: "角色名称和角色key不能为空"
+
+  - title: "添加角色失败 - 角色名和角色key都为空"
+    request_data:
+      roleName: ""
+      roleKey: ""
+    validators:
+      - code: 500
+        msg: "角色名称和角色key不能为空"
+
+  - title: "编辑角色成功"
+    request_data:
+      roleId: 1
+      roleName: "管理员"
+      roleKey: "admin"
+    validators:
+      - code: 200
+        msg: "操作成功"
+        data: 1
+
+  - title: "编辑角色失败 - 角色不存在"
+    request_data:
+      roleId: 100
+      roleName: "管理员"
+      roleKey: "admin"
+    validators:
+      - code: 500
+        msg: "角色不存在"
+

@@ -28,6 +28,9 @@ class UserAPI:
         return self.client.request("get", "/user/active/ranking")
 
     # 获取用户积分
-
     def get_user_integral(self):
         return self.client.request("get", "/user/integral")
+
+    # 分配用户角色
+    def assign_role(self, data):
+        return self.client.request("post", f"/user/addRole", json=data)
