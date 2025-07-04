@@ -2,7 +2,6 @@ import allure
 import pytest
 
 from api.article_api import ArticleAPI
-from api.user_api import UserAPI
 from common.debug_printer import print_api_debug
 from common.test_helper import TestHelper
 from common.yaml_util import read_yaml
@@ -15,14 +14,11 @@ config = read_yaml("data/config.yaml")
 base_url = config["base_url"]
 
 
-@pytest.fixture(scope="module", )  # 模块级, 一个模块一个用例
-@allure.feature("文章模块")
+@allure.feature("文章详情模块")
 @pytest.mark.parametrize("title, request_data, validators",
                          load_test_data("data/article_data.yaml", "article_detail_cases"))
 def test_article_detail_param(title, request_data, validators, login_token):
     with allure.step(f"执行用例：{title}"):
-        # login_token fixture现在会确保提供有效token
-
         # 创建带有token的API实例
         article_api = ArticleAPI(base_url, login_token)
         # 调用获取文章详情API

@@ -1,5 +1,5 @@
 import allure
-from common.assertions import Assert
+from common.assertions import Assert, TimeAssert
 
 
 class TestHelper:
@@ -28,8 +28,15 @@ class TestHelper:
             # 遍历validators中的所有断言
             for validator in validators:
                 for key, expected_value in validator.items():
+                    # 检查是否有接口耗时断言
+                    if key == 'max_resp_time':
+                        # 获取响应时间（毫秒）
+                        elapsed_ms = res.elapsed.total_seconds() * 1000
+                        print(f"验证接口响应时间: 实际值={elapsed_ms:.2f}ms, 最大允许值={expected_value}ms")
+                        TimeAssert.assert_less_than(elapsed_ms, expected_value,
+                                                    f"{title} - 接口响应时间超过最大限制: {elapsed_ms:.2f}ms > {expected_value}ms")
                     # 处理嵌套字段，如data.username
-                    if isinstance(expected_value, dict) and key in response_json:
+                    elif isinstance(expected_value, dict) and key in response_json:
                         nested_obj = response_json[key]
                         for nested_key, nested_value in expected_value.items():
                             actual_nested_value = nested_obj.get(nested_key)

@@ -14,9 +14,11 @@ login_cases:
     validators:
       - code: 200
         msg: "操作成功"
+        max_resp_time: 10000 # ms
         data:
           username: "admin"
           userId: 1
+
 
   - title: "登录失败 - 错误密码"
     request_data:
@@ -137,5 +139,6 @@ user_activity_cases:
     validators:
       - code: 200
         msg: "操作成功"
+        max_resp_time: 100 # ms
 
 

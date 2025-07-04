@@ -7,9 +7,10 @@ def print_api_debug(title: str, res, expected_status=None):
     except:
         body = str(res.request.body)
 
-    print("\n" + "┌" + f"─[ {title} ]".center(60, "─") + "┐")
+    print(f"\n" + "┌" + f"─[ {title} ]".center(60, "─") + "┐")
     print(f"│ 请求 URL     : {res.request.url}")
     print(f"│ 请求 Method  : {res.request.method}")
+    print(f"│ 请求 Headers  : {res.request.headers}")
     print(f"│ 请求 Body    : {body}")
 
     if expected_status and res.status_code != expected_status:
@@ -18,6 +19,7 @@ def print_api_debug(title: str, res, expected_status=None):
         status_line = f"✅ {res.status_code}"
 
     print(f"│ 响应 Status  : {status_line}")
+    print(f"│ 响应 Headers : {res.headers}")
     try:
         content = json.dumps(res.json(), ensure_ascii=False)
     except:

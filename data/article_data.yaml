@@ -49,6 +49,9 @@ article_detail_cases:
     validators:
       - code: 200
         msg: "操作成功"
+        data:
+          id: 1
+          title: "这是一篇测试文章"
 
   # 获取文章详情 - 文章不存在
   - title: "获取文章详情 - 文章不存在"
