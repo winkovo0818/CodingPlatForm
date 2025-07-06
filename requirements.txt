@@ -5,4 +5,5 @@ allure-pytest
 matplotlib
 pandas
 allure-python-commons
+pytest-cov
 =======
